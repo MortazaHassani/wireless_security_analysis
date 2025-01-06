@@ -453,16 +453,15 @@ This section provides a synthesis of the articles reviewed on the security analy
     \hline
     \endlastfoot
     
-    Security Analysis of 5G Critical Interfaces & This paper examines the security of key interfaces in the 5G system (5GS), emphasizing their role in interconnecting Network Functions (NFs) for data and service exchange. The study highlights the vulnerability of critical interfaces such as N1, N2, N3, SBI etc. due to their exposure to external networks and sensitive data handling. It categorizes threats using the STRIDE framework and analyzes security measures proposed by standardization bodies like 3GPP and ETSI.
+    \cite{mahyoub2024security} & This paper examines the security of key interfaces in the 5G system (5GS), emphasizing their role in interconnecting Network Functions (NFs) for data and service exchange. The study highlights the vulnerability of critical interfaces such as N1, N2, N3, SBI etc. due to their exposure to external networks and sensitive data handling. It categorizes threats using the STRIDE framework and analyzes security measures proposed by standardization bodies like 3GPP and ETSI.
     The paper also identifies gaps in existing security recommendations and suggests measures for confidentiality, integrity, authentication, replay protection, and privacy. It emphasizes the need for robust security mechanisms, including encryption protocols (e.g., IPsec, DTLS), key management strategies, and mutual authentication processes, to mitigate risks like spoofing, tampering, and information leakage.
     This work is notable for its interface-specific focus, offering a detailed analysis of vulnerabilities and threats, and providing insights for enhancing 5G interface security. \\
     \hline
 
-    Penetration Testing of 5G Core Network
-    Web Technologies & This papermpresents a comprehensive security assessment of the 5G core from a web security perspective, focusing on vulnerabilities in service-based architectures and web technologies. Leveraging the STRIDE threat modeling framework, the authors identify key threats, including spoofing, tampering, information disclosure, and denial of service, in open-source 5G core implementations such as Open5GS, Free5GC, and OpenAirInterface.
+    \cite{giambartolomei2024penetration} & This papermpresents a comprehensive security assessment of the 5G core from a web security perspective, focusing on vulnerabilities in service-based architectures and web technologies. Leveraging the STRIDE threat modeling framework, the authors identify key threats, including spoofing, tampering, information disclosure, and denial of service, in open-source 5G core implementations such as Open5GS, Free5GC, and OpenAirInterface.
     The study highlights specific vulnerabilities, such as SQL/NoSQL injections, brute force attacks, and directory traversal, emphasizing the importance of proper input sanitization, robust authentication mechanisms, and adherence to the principle of least privilege. \\
     \hline
-    ZT and Defense in depth & 
+    \cite{defenseindepth} & 
     \parbox[t]{12cm}{
     This article explores the principles of Zero Trust (ZT) applied to six components of 5G: endpoints, the air interface, radio base stations, Multi-Access Edge Computing (MEC), the 5G core network, and IoT applications. The goal is to propose an architecture and a defense-in-depth strategy aligned with ZT principles. The key proposals include:
     \begin{enumerate}
@@ -477,7 +476,7 @@ This section provides a synthesis of the articles reviewed on the security analy
     } \\
     \hline
 
-    ZTRAN: prototyping zero trust security xApps for Open Radio Access network deployments &
+    \cite{ztran} &
     \parbox[t]{12cm}{
         This article explores integrating Zero Trust (ZT) methods into Open RAN (O-RAN), introducing the ZTRAN security framework comprising three microservices: authentication, intrusion detection, and secure slicing. O-RAN’s components (O-CU, O-DU, O-RU) present new challenges in user/network authentication, access control, data confidentiality, and resource integrity. 
         \begin{enumerate}
@@ -489,7 +488,7 @@ This section provides a synthesis of the articles reviewed on the security analy
     }\\ 
     \hline
 
-    iZTA: Prototyping Zero Trust for 5G Networks & 
+    \cite{izta} & 
     \parbox[t]{12cm}{
         The i-ZTA framework incorporates real-time monitoring, risk evaluation, and access decision-making using a dynamic trust algorithm (MED components). It aligns with the 3GPP 5G specification, leveraging the O-RAN architecture and machine learning for enhanced security. This paper is the first to propose an architectural concept for i-ZTA, setting a foundation for developing AI-driven security solutions in 5G/6G networks. In the i-ZTA architecture integrated into the O-RAN, each component plays a key role in managing the security of 5G/6G networks. 
         \begin{enumerate}
@@ -500,16 +499,14 @@ This section provides a synthesis of the articles reviewed on the security analy
         This architecture relies on open interfaces in the O-RAN for data collection and real-time control, allowing for flexible and programmable security management. Integration with cloud platforms, MEC, and fog computing is planned for future research.
     } \\ 
     \hline
-        Enhancing Security in 5G Cloud-Native Architectures through Zero Trust and Risk-Based Access Control & This article discusses the security challenges in 5G networks, which are built on a highly distributed, open service-based architecture, increasing the attack surface compared to traditional networks. The shift to cloud-native architectures, where monolithic applications are divided into microservices, has resulted in untrusted communication between these services, necessitating new cybersecurity measures. The article proposes integrating the Zero Trust model, which operates on the principle of "Never Trust, Always Verify," into access control systems. It emphasizes dynamically adjusting trust levels based on user behavior and recommendations. 
 
+    \cite{secure5gandbeyond} & This article discusses the security challenges in 5G networks, which are built on a highly distributed, open service-based architecture, increasing the attack surface compared to traditional networks. The shift to cloud-native architectures, where monolithic applications are divided into microservices, has resulted in untrusted communication between these services, necessitating new cybersecurity measures. The article proposes integrating the Zero Trust model, which operates on the principle of "Never Trust, Always Verify," into access control systems. It emphasizes dynamically adjusting trust levels based on user behavior and recommendations. 
     - \textbf{TRBAC (Trust-Based Role-Based Access Control):} This model extends traditional RBAC by incorporating trust and risk elements, evaluating users not only by their roles but also by their behavior, trustworthiness, and associated risk. This dynamic approach helps secure assets by continually assessing user actions and adjusting privileges accordingly.  
     This dynamic approach helps secure assets by continually assessing user actions and adjusting privileges accordingly, addressing the evolving security needs of 5G cloud-native environments. \\ 
     \hline
 
-    5GC-SDP: Security Enhancement of 5G Core Network with ZT & The following article addresses the 5G core network (5GC) architecture, based on Service-Based Architecture (SBA), which brings significant flexibility and innovation but also introduces security challenges due to the integration of various signaling protocols and virtualization complexities. The proposed solution is a 5GC-SDP architecture that combines Zero Trust principles with a Software-Defined Perimeter (SDP) approach, focusing on secure communication within the core network through Single Package Authorization (SPA). This ensures that only authenticated and authorized Network Functions (NF) can interact securely.  
-
+    \cite{5gcsdp} & The following article addresses the 5G core network (5GC) architecture, based on Service-Based Architecture (SBA), which brings significant flexibility and innovation but also introduces security challenges due to the integration of various signaling protocols and virtualization complexities. The proposed solution is a 5GC-SDP architecture that combines Zero Trust principles with a Software-Defined Perimeter (SDP) approach, focusing on secure communication within the core network through Single Package Authorization (SPA). This ensures that only authenticated and authorized Network Functions (NF) can interact securely.  
     - SPA enhancement module: Using machine learning algorithms designed to counter SPA-related DoS attacks. 
-
     - 5GC-SDP architecture: This enhances core network security by reducing network exposure and implementing fine-grained access control, as demonstrated through tests against port scanning, DoS, and DDoS attacks.  
     The 5GC-SDP architecture effectively enhances core network security by reducing network exposure and implementing fine-grained access control. \\ 
     \hline
